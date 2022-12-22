@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <style type="text/css">
+            *{
+                box-sizing: border-box;
+                margin: 0%;
+                padding: 0%;
+            }
+            body{
+                width: 100vw;
+                height: 100vh;
+            }
+            .fundo{
+                width: 100vw;
+                height: 100vh;
+            }
+            .fundo > div[class^="largura"]{
+                border-style: solid;
+                border-width: 5px;
+                margin: 10%;
+                height: 40px;
+                
+            }
+            .largura-auto{
+                width: auto;
+                border-color:  salmon;
+            }
+            .largura-pixel{
+                width: 100px;
+                border-color:  lawngreen;
+            }
+            .largura-vwvh{
+                width: 50vw;
+                border-color: aqua;
+            }
+            .largura-percent{
+                width: 50%;
+                border-color:  green;
+            }
+            .largura-fit{
+                width: fit-content;
+                border-color:  blue;
+            }
+            .largura-max{
+                width: max-content;
+                border-color:  thistle;
+            }
+            .largura-min{
+                width: min-content;
+                border-color: peru;
+            }
+            .largura-revert{
+                width: revert;
+                border-color:  red;
+            }
+            .largura-unset{
+                width: unset;
+                border-color: brown;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="fundo">
+            <div class="largura-auto">
+                AUTO: Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis saepe hic possimus, earum ea consequatur 
+            </div>
+            <br>
+            <div class="largura-vwvh">
+                VWVH Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis saepe hic possimus, earum ea consequatur 
+            </div>
+            <div class="largura-pixel">
+                Pixek  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis saepe hic possimus, earum ea consequatur
+            </div>
+            <div class="largura-percent">
+                Percent Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis saepe hic possimus, earum ea consequatu
+            </div>
+            <div class="largura-fit">
+                FIT Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis saepe hic possimus, earum ea consequatu
+            </div>
+            <div class="largura-max">
+                MAX Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis saepe hic possimus, earum ea consequatu
+            </div>
+            <div class="largura-min">
+                MIN Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis saepe hic possimus, earum ea consequatu
+            </div>
+            <div class="largura-revert">
+                REVERT Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis saepe hic possimus, earum ea consequatu
+            </div>
+            <div class="largura-unset">
+                REVERT Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis saepe hic possimus, earum ea consequatu
+            </div>
+            
+        </div>
+    </body>
+</html>
