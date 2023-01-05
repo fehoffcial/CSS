@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <style type="text/css">
+            *{
+                /*box-sizing: content-box;*/
+                box-sizing: border-box;
+                margin: 0%;
+                padding: 0%;
+            }
+            body{
+                width: 100vw;
+                height: 100vh;
+                background-color: aqua;
+            }
+            body:hover{
+                background-color: bisque;
+            }
+            div.content-box{
+                box-sizing: content-box;
+                width: 300px;
+                height: 500px;
+                padding: 100px;
+                background-color: lawngreen;
+            }
+            .border-box{
+                box-sizing: border-box;
+                width: 300px;
+                height: 500px;
+                padding: 100px;
+                background-color: indianred;
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="border-box">Border-box</div>   
+        <div class="content-box">Content-box</div>    
+    </body>
+</html>
