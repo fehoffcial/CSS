@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <style type="text/css">
+            *{
+                box-sizing: border-box;
+                margin: 0%;
+                padding: 0%;
+                outline: none;
+            }
+            body{
+                width: 100vw;
+                height: 100vh;
+            }
+            .container{
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;;
+                background-color: rgba(17, 11, 11, 0.877);
+                color: #fff;
+            }
+            .container > div{
+                width: 25%;
+                height: 25%;
+                border: 1px solid #fff;
+                margin: 10px;
+            }
+            .container > div:hover > div{
+                color: #fdcb6e;
+                font-weight: 800;
+            }
+            .row{
+                display: flex;
+                flex-direction: row;
+            }
+            .row-reverse{
+                display: flex;
+                flex-direction: row-reverse;
+            }
+            .column{
+                display: flex;
+                flex-direction: column;
+            }
+            .column-reverse{
+                display: flex;
+                flex-direction: column-reverse;
+            }
+            .ok{
+                width: 35%;
+                height: 35%;
+                background-color: aqua;
+            }
+            .oka{
+                width: 35%;
+                height: 35%; 
+                background-color: aquamarine;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="item">Flex-Direction: ROW</div>
+                <div class="ok"></div>
+                <div class="oka"></div>
+            </div>
+            <div class="row-reverse">
+                <div class="item">Flex-Direction: ROW-REVERSE</div>
+                <div class="ok"></div>
+                <div class="oka"></div>
+            </div>
+            <div class="column">
+                <div class="item">Flex-Direction: COLUMN</div>
+                <div class="ok"></div>
+                <div class="oka"></div>
+            </div>
+            <div class="column-reverse">
+                <div class="item">Flex-Direction: COLUMN-REVERSE</div>
+                <div class="ok"></div>
+                <div class="oka"></div>
+            </div>
+        </div>
+    </body>
+</html>
