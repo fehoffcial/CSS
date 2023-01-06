@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <style type="text/css">
+            *{
+                box-sizing: border-box;
+                margin: 0%;
+                padding: 0%;
+                outline: none;
+            }
+            body{
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .container{
+                margin-top: 30px;
+                max-width: 50vw;
+            }
+            h1{
+                color: #bd3131;
+            }
+            /* DISPLAY: BLOCK*/
+            .container-block{
+                display: block;
+            }
+            .span-block{
+                display: block;
+                transition: 0.3s;
+            }
+            /* DISPLAY: INLINE*/
+            .span-inline{
+                display: inline;
+            }
+            /* DISPLAY: INLINE-BLOCK*/
+            .container-inline-block, .span-inline-block{
+                display: inline-block;
+            }
+            .span-inline-block{
+                background-color: aqua;
+            }
+            /* DISPLAY: CONTENTS*/
+            .container-contents,.span-contents{
+                display: contents;
+                background-color: #bd3131;
+            }
+            /* DISPLAY: FLEX*/
+
+            .container-flex{
+                display: flex;
+                flex-direction: column;
+            }
+            /* DISPLAY: INLINE-FLEX*/
+            .container-inline-flex{
+                display: inline-flex;
+            }
+            /* DISPLAY: GRID*/
+
+            .container-grid{
+                display: grid;
+            }
+            /* DISPLAY: NONE*/
+            .container-none:hover .span-none{
+                display: none;
+                transition: 0.9s;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Display: Block</h1>
+            <div class="container-block">
+                <span class="span-block">A tag SPAN esta um Display BLOCK. </span>
+                <span class="span-block">Apos que passar o mouse ela se transformar no displat INLINE</span>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Display: INLINE</h1>
+            <div class="container-inline">
+                <span class="span-inline">A tag SPAN é um Display contents. </span>
+                <span class="span-inline">Nao aceita medida e color de fundo</span>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Display: INLINE-BLOCK</h1>
+            <div class="container-inline-block">
+                <span class="span-inline-block">A tag SPAN é um Display INLINE-block-BLOCK. </span>
+                <span class="span-inline-block">Apos que passar o mouse ela se transformar no displat BLOCK</span>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Display: CONTENTS</h1>
+            <div class="container-contents">
+                <span class="span-contents">A tag SPAN é um Display CONTENTS. </span>
+                <span class="span-contents">Apos que passar o mouse ela se transformar no displat INLINE</span>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Display: Flex</h1>
+            <div class="container-flex">
+                <span>A tag SPAN é um Display FLEX. </span>
+                <span>Apos que passar o mouse ela se transformar no displat BLOCK</div>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Display: INLINE-FLEX</h1>
+            <div class="container-inline-flex">
+                <span class="span-inline-flex">A tag SPAN é um Display INLINE-FLEX. </span>
+                <span class="span-inline-flex">Apos que passar o mouse ela se transformar no displat INLINE</span>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Display: GRID</h1>
+            <div class="container-grid">
+                <span class="span-grid">A tag SPAN é um Display GRID. </span>
+                <span class="span-grid">Apos que passar o mouse ela se transformar no displat BLOCK</span>
+            </div>
+        </div>
+        <div class="container">
+            <h1>Display: NONE</h1>
+            <div class="container-none">
+                <span class="span-none">A tag SPAN é um Display NONE. </span>
+                <span class="span-none">Apos que passar o mouse ela se transformar no displat SUMI</span>
+            </div>
+        </div>
+    </body>
+</html>
